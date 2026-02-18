@@ -1,0 +1,12 @@
+cargo:rerun-if-changed=build.rs
+cargo:rerun-if-env-changed=LOG
+cargo:rerun-if-env-changed=TG_USER_DIR
+cargo:rerun-if-env-changed=TG_USER_VERSION
+cargo:rerun-if-env-changed=TG_USER_CRATE
+cargo:rerun-if-env-changed=TG_USER_LOCAL_DIR
+cargo:rerun-if-env-changed=CARGO_FEATURE_EXERCISE
+cargo:rustc-link-arg=-T/home/chyyuu/thecodes/ai4ose/tmp5/tg-rcore-monorepo/target/riscv64gc-unknown-none-elf/debug/build/tg-rcore-tutorial-ch3-b64c1e6828cb24f2/out/linker.ld
+cargo:rerun-if-changed=/home/chyyuu/thecodes/ai4ose/tmp5/tg-rcore-monorepo/rcore-tutorial-tangrams/ch3/tg-user/cases.toml
+cargo:rerun-if-changed=/home/chyyuu/thecodes/ai4ose/tmp5/tg-rcore-monorepo/rcore-tutorial-tangrams/ch3/tg-user/Cargo.toml
+cargo:rerun-if-changed=/home/chyyuu/thecodes/ai4ose/tmp5/tg-rcore-monorepo/rcore-tutorial-tangrams/ch3/tg-user/src
+cargo:rustc-env=APP_ASM=/home/chyyuu/thecodes/ai4ose/tmp5/tg-rcore-monorepo/target/riscv64gc-unknown-none-elf/debug/build/tg-rcore-tutorial-ch3-b64c1e6828cb24f2/out/app.asm

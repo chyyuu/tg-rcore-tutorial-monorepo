@@ -1,0 +1,4 @@
+cargo:rerun-if-changed=build.rs
+cargo:rerun-if-env-changed=LOG
+cargo:rerun-if-env-changed=BASE_ADDRESS
+cargo:rerun-if-env-changed=CHAPTER

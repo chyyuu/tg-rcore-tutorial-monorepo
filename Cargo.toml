@@ -1,0 +1,49 @@
+[workspace]
+# 工作区包含的所有 crate（指向拆分后的独立仓库目录）
+members = [
+  "rcore-tutorial-tangrams/ch1",
+  "rcore-tutorial-tangrams/ch2",
+  "rcore-tutorial-tangrams/ch3",
+  "rcore-tutorial-tangrams/ch4",
+  "rcore-tutorial-tangrams/ch5",
+  "rcore-tutorial-tangrams/ch6",
+  "rcore-tutorial-tangrams/ch7",
+  "rcore-tutorial-tangrams/ch8",    
+  "rcore-tutorial-tangrams/tg-checker",
+  "rcore-tutorial-tangrams/tg-console",
+  "rcore-tutorial-tangrams/tg-easy-fs",
+  "rcore-tutorial-tangrams/tg-kernel-alloc",  
+  "rcore-tutorial-tangrams/tg-kernel-context",
+  "rcore-tutorial-tangrams/tg-kernel-vm",
+  "rcore-tutorial-tangrams/tg-linker",
+  "rcore-tutorial-tangrams/tg-sbi",  
+  "rcore-tutorial-tangrams/tg-signal",
+  "rcore-tutorial-tangrams/tg-signal-defs",
+  "rcore-tutorial-tangrams/tg-signal-impl",
+  "rcore-tutorial-tangrams/tg-sync",  
+  "rcore-tutorial-tangrams/tg-syscall",
+  "rcore-tutorial-tangrams/tg-task-manage",
+  "rcore-tutorial-tangrams/tg-user",  
+]
+
+exclude = ["ch1","ch2","ch3","ch4","ch5","ch6","ch7","ch8","ch9","tg-user","tg-checker"]
+
+
+# 可选：指定默认依赖版本
+[workspace.dependencies]
+# 示例：统一 tg-xxx 的版本
+tg-rcore-tutorial-checker = { path = "rcore-tutorial-tangrams/tg-checker", version = "0.4.2-preview.2" }
+tg-rcore-tutorial-console = { path = "rcore-tutorial-tangrams/tg-console", version = "0.4.2-preview.2" }
+tg-rcore-tutorial-easy-fs = { path = "rcore-tutorial-tangrams/tg-easy-fs", version = "0.4.2-preview.2" }
+tg-rcore-tutorial-kernel-alloc = { path = "rcore-tutorial-tangrams/tg-kernel-alloc", version = "0.4.2-preview.2" }
+tg-rcore-tutorial-kernel-context = { path = "rcore-tutorial-tangrams/tg-kernel-context", version = "0.4.2-preview.2" }
+tg-rcore-tutorial-kernel-vm = { path = "rcore-tutorial-tangrams/tg-kernel-vm", version = "0.4.2-preview.2" }
+tg-rcore-tutorial-linker = { path = "rcore-tutorial-tangrams/tg-linker", version = "0.4.2-preview.2" }
+tg-rcore-tutorial-sbi = { path = "rcore-tutorial-tangrams/tg-sbi", version = "0.4.2-preview.2" }
+tg-rcore-tutorial-signal = { path = "rcore-tutorial-tangrams/tg-signal", version = "0.4.2-preview.2" }
+tg-rcore-tutorial-signal-defs = { path = "rcore-tutorial-tangrams/tg-signal-defs", version = "0.4.2-preview.2" }
+tg-rcore-tutorial-signal-impl = { path = "rcore-tutorial-tangrams/tg-signal-impl", version = "0.4.2-preview.2" }
+tg-rcore-tutorial-sync = { path = "rcore-tutorial-tangrams/tg-sync", version = "0.4.2-preview.2" }
+tg-rcore-tutorial-syscall = { path = "rcore-tutorial-tangrams/tg-syscall", version = "0.4.2-preview.2" }
+tg-rcore-tutorial-task-manage = { path = "rcore-tutorial-tangrams/tg-task-manage", version = "0.4.2-preview.2" }
+tg-rcore-tutorial-user = { path = "rcore-tutorial-tangrams/tg-user", version = "0.4.2-preview.2" }

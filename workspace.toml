@@ -1,0 +1,36 @@
+[workspace]
+# 工作区名称
+name = "tg-rcore-workspace"
+# 所有成员 crate 的路径（与 Cargo.toml 一致）
+members = [
+  "rcore-tutorial-tangrams/ch1",
+  "rcore-tutorial-tangrams/ch2",
+  "rcore-tutorial-tangrams/ch3",
+  "rcore-tutorial-tangrams/ch4",
+  "rcore-tutorial-tangrams/ch5",
+  "rcore-tutorial-tangrams/ch6",
+  "rcore-tutorial-tangrams/ch7",
+  "rcore-tutorial-tangrams/ch8",    
+  "rcore-tutorial-tangrams/tg-checker",
+  "rcore-tutorial-tangrams/tg-console",
+  "rcore-tutorial-tangrams/tg-easy-fs",
+  "rcore-tutorial-tangrams/tg-kernel-alloc",  
+  "rcore-tutorial-tangrams/tg-kernel-context",
+  "rcore-tutorial-tangrams/tg-kernel-vm",
+  "rcore-tutorial-tangrams/tg-linker",
+  "rcore-tutorial-tangrams/tg-sbi",  
+  "rcore-tutorial-tangrams/tg-signal",
+  "rcore-tutorial-tangrams/tg-signal-defs",
+  "rcore-tutorial-tangrams/tg-signal-impl",
+  "rcore-tutorial-tangrams/tg-sync",  
+  "rcore-tutorial-tangrams/tg-syscall",
+  "rcore-tutorial-tangrams/tg-task-manage",
+  "rcore-tutorial-tangrams/tg-user",  
+]
+
+# 可选：批量操作配置
+[commands]
+# 批量 build 时的参数
+# build = { args = ["--release"] }
+# 批量 test 时的参数
+# test = { args = ["--no-fail-fast"] }
