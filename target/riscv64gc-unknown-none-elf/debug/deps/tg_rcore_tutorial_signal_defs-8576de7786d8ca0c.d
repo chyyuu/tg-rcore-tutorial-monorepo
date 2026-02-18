@@ -1,7 +1,0 @@
-/home/chyyuu/thecodes/ai4ose/tmp5/tg-rcore-monorepo/target/riscv64gc-unknown-none-elf/debug/deps/tg_rcore_tutorial_signal_defs-8576de7786d8ca0c.d: rcore-tutorial-tangrams/tg-signal-defs/src/lib.rs
-
-/home/chyyuu/thecodes/ai4ose/tmp5/tg-rcore-monorepo/target/riscv64gc-unknown-none-elf/debug/deps/libtg_rcore_tutorial_signal_defs-8576de7786d8ca0c.rlib: rcore-tutorial-tangrams/tg-signal-defs/src/lib.rs
-
-/home/chyyuu/thecodes/ai4ose/tmp5/tg-rcore-monorepo/target/riscv64gc-unknown-none-elf/debug/deps/libtg_rcore_tutorial_signal_defs-8576de7786d8ca0c.rmeta: rcore-tutorial-tangrams/tg-signal-defs/src/lib.rs
-
-rcore-tutorial-tangrams/tg-signal-defs/src/lib.rs:

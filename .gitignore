@@ -1,0 +1,4 @@
+/target/
+rcore-tutorial-tangrams/*/target/
+rcore-tutorial-tangrams/*/tg-user/target/
+rcore-tutorial-tangrams/*/tg-rcore-tutorial-user/target/
