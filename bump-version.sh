@@ -28,10 +28,12 @@ echo "  新版本: $NEW_VER"
 echo "  仓库根: $REPO_ROOT"
 echo "========================================"
 
-# ── Step 1: 删除 ch*/tg-user 缓存目录 ──────────────────────────────────────
+# ── Step 1: 删除缓存目录和编译输出 ────────────────────────────────────────
 echo ""
-echo ">>> Step 1: 清理旧的 tg-user 克隆缓存..."
+echo ">>> Step 1: 清理缓存目录和编译输出..."
 CLEANED=0
+
+# 删除 ch*/tg-user 缓存目录
 for dir in "$TANGRAMS"/ch*/tg-user; do
     if [ -d "$dir" ]; then
         rm -rf "$dir"
@@ -39,8 +41,27 @@ for dir in "$TANGRAMS"/ch*/tg-user; do
         CLEANED=$((CLEANED + 1))
     fi
 done
+
+# 删除 ch*/target 编译输出目录
+for dir in "$TANGRAMS"/ch*/target; do
+    if [ -d "$dir" ]; then
+        rm -rf "$dir"
+        echo "    已删除: ${dir#$REPO_ROOT/}"
+        CLEANED=$((CLEANED + 1))
+    fi
+done
+
+# 删除 tg-*/target 编译输出目录
+for dir in "$TANGRAMS"/tg-*/target; do
+    if [ -d "$dir" ]; then
+        rm -rf "$dir"
+        echo "    已删除: ${dir#$REPO_ROOT/}"
+        CLEANED=$((CLEANED + 1))
+    fi
+done
+
 if [ "$CLEANED" -eq 0 ]; then
-    echo "    无需清理（ch*/tg-user 均不存在）"
+    echo "    无需清理（所有目录均不存在）"
 fi
 
 # ── Step 2: 转义版本号中的特殊字符（用于 sed 正则） ─────────────────────────
